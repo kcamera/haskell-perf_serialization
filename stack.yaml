@@ -1,10 +1,13 @@
 system-ghc: false
 
 # ghc 8.4.4
-resolver: lts-12.16
+#resolver: lts-12.16
 
 # ghc 8.6.1
 #resolver: nightly-2018-10-03
+
+# Lutris
+resolver: nightly-2024-02-27
 
 # Local packages, usually specified by relative directory name
 packages:
@@ -16,11 +19,8 @@ flags:
      newtime15: true
 
 extra-deps:
-- flat-0.3.4
-- persist-0.1
+- datasets-0.4.0
 - packman-0.5.0
-# - binary-0.8.5.1
-- cereal-0.5.7.0
-- store-0.5.0.1
-- serialise-0.2.1.0
-- datasets-0.2.1
+- persist-0.1.1.5
+- streaming-cassava-0.2.0.0
+allow-newer: true
